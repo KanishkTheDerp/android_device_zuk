@@ -49,6 +49,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := kryo
 
 TARGET_USES_64_BIT_BINDER := true
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff androidboot.selinux=permissive
@@ -209,6 +210,9 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_PROVIDES_POWERHAL := true
 TARGET_POWERHAL_VARIANT := qcom
 TARGET_POWERHAL_VARIANT := msm8996
+
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
