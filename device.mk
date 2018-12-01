@@ -161,6 +161,10 @@ PRODUCT_PACKAGES += \
     mm-qcamera-app \
     SnapdragonCamera
 
+# CarrierConfig
+PRODUCT_PACKAGES += \
+    CarrierConfig
+
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
     cneapiclient \
