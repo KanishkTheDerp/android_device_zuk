@@ -233,6 +233,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common
+
+# Perf
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 #Power
 PRODUCT_PACKAGES += \
      power.qcom
